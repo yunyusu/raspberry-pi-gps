@@ -6,7 +6,7 @@
    - write micro SD card with Raspberry pi imager(open ssd)
    - connect to the same wifi with pi
    - cmd line:
-     ssd <user-name>@<ip-address>
+     ssd user-name@ip-address
      enter password
 3. test Neo 6M gps module: https://sparklers-the-makers.github.io/blog/robotics/use-neo-6m-module-with-raspberry-pi/
    - tab*2 can jump out hint directory
