@@ -10,7 +10,28 @@
      Cookie931019
 3. test Neo 6M gps module: https://sparklers-the-makers.github.io/blog/robotics/use-neo-6m-module-with-raspberry-pi/
    - tab*2 can jump out hint directory
-   - sudo nano /boot/firmware/config.txt is correct
+   - sudo vim /boot/firmware/config.txt is correct (wrongly open something readonly use :!q to exit, and typy sudo su, then try again.)
+inside:
+...
+[all]
+dtparam=spi=on
+dtoverlay=pi3-disable-bt
+core_freq=250
+enable_uart=1
+force_turbo=1
+
+enable_uart=1
+dtoverlay=uart0
+dtoverlay=disable-bt
+
+   - copy a backup
+sudo cp /boot/cmdline.txt /boot/cmdline_backup.txt
+
+   - turn of uart by copy follows code into /boot/firmware/config.txt
+dwc_otg.lpm_enable=0 console=tty1 root=/dev/mmcblk0p2 rootfstype=ext4 elevator=deadline fsck.repair=yes rootwait quiet splash plymouth.ignore-serial-consoles
+
+   - sudo cat /dev/ttyAMA0 to get signal
+
 4. build virsual python: https://docs.python.org/zh-tw/3.13/library/venv.html
    - run with python <file-name>.py
    - sudo su can transform to root
