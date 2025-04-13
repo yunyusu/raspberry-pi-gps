@@ -40,4 +40,12 @@ dwc_otg.lpm_enable=0 console=tty1 root=/dev/mmcblk0p2 rootfstype=ext4 elevator=d
 
 ## Planning
 1. try arduino board: https://randomnerdtutorials.com/guide-to-neo-6m-gps-module-with-arduino/
-2. 
+2. try RYS352A and visual
+3. try RTK(too expansive QQ)
+4. why does it shut down all a sudden?
+- 供電不穩？
+- Baudrate 不一致？
+
+
+
+
