@@ -54,7 +54,6 @@ dwc_otg.lpm_enable=0 console=tty1 root=/dev/mmcblk0p2 rootfstype=ext4 elevator=d
    - To run the code
      - python3 filename.py
 
-
 5. read the GPS signal: https://blog.ittraining.com.tw/2016/02/gpsgprmc.html
 
 ## Planning
@@ -66,10 +65,14 @@ dwc_otg.lpm_enable=0 console=tty1 root=/dev/mmcblk0p2 rootfstype=ext4 elevator=d
 => 用pico、Arduino測試後皆不會出現狀況
 5. power consumption
   p = IV (find quiescent current)
+6. 或許可以接一個控制系統運作/關閉的電路
+https://www.instructables.com/Nature-Trail-Mapper-With-ESP32-and-RYS352A-GPS-Mod/
+7. 自己畫電路板：把電池、升壓模組、gps...都弄上去:D
+
+
+
+
+
+
 
   
-
-
-
-
-
