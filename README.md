@@ -18,7 +18,7 @@
 4. test Neo 6M gps module: https://sparklers-the-makers.github.io/blog/robotics/use-neo-6m-module-with-raspberry-pi/
    - tab*2 can jump out hint directory
    - sudo vim /boot/firmware/config.txt is correct (wrongly open something readonly use :!q to exit, and typy sudo su, then try again.)
-   - 大概就是在說要開啟Uart串口，不要使用mini Uart(該接口從mini Uart→Uart)，詳見：https://harttle.land/2017/01/14/raspberrypi-uart.html
+      - 大概就是在說要開啟Uart串口，不要使用mini Uart(該接口從mini Uart→Uart)，詳見：https://harttle.land/2017/01/14/raspberrypi-uart.html
 inside:
 ...
 [all]
