@@ -2,7 +2,8 @@
 
 ## how to build
 1. hardware linking:
-   - raspberry pi: https://pinout.xyz/pinout/3v3_power
+   - raspberry pi Zero: https://pinout.xyz/pinout/3v3_power
+   - raspberry pi pico and Zero difference: https://www.nabto.com/raspberry-pi-pico-programming/ 
    - RYS352A:
       1. https://www.instructables.com/Nature-Trail-Mapper-With-ESP32-and-RYS352A-GPS-Mod/
       2. https://reyax.com/products/RYS352A
@@ -51,7 +52,7 @@ dwc_otg.lpm_enable=0 console=tty1 root=/dev/mmcblk0p2 rootfstype=ext4 elevator=d
    - To move it
      - mv filename ~/destination
    - To run the code
-     - python3 filename.py 
+     - python3 filename.py
 
 
 5. read the GPS signal: https://blog.ittraining.com.tw/2016/02/gpsgprmc.html
